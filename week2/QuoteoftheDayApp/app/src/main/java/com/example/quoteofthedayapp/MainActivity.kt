@@ -39,14 +39,12 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier
                         .fillMaxSize()
-//                        .background(Color(0xFFd5f5e3)),
-//                        .background((Color.Black))
                 ) { innerPadding ->
                     Box (
                         modifier = Modifier
                             .fillMaxSize()
                             .padding(innerPadding)
-                            .background(Color.Black)
+                            .background(Color(0xFFd5f5e3))
                     ) {
                         Quote(
                             modifier = Modifier
@@ -80,7 +78,7 @@ fun Quote(modifier: Modifier = Modifier) {
                 .fillMaxWidth()
                 .padding(16.dp),
             textAlign = TextAlign.Center,
-            color = Color.White
+            color = Color(0xff1cab5a)
         )
 
         // add button to change the quoter
