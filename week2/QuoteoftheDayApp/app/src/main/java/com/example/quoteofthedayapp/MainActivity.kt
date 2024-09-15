@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.contentColorFor
@@ -86,25 +87,25 @@ fun Quote(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .clip(RoundedCornerShape(12.dp)),
             colors = ButtonDefaults.buttonColors(
-//                backgroundColor = Color(0xFF333333),
-//                contentColorFor()
+                containerColor = Color(0xff1cab5a),
+                contentColor = contentColorFor(Color(0xff1cab5a))
             ),
+
             onClick = {
                 val newRandomIndex = Random.nextInt(quotes.size)
                 currentQuote.value = quotes[newRandomIndex]
             }
         ) {
-            Text(text = "Show Another Quote")
+            Text(
+                modifier = Modifier
+                    .padding(8.dp),
+                color = Color.White,
+                fontSize = MaterialTheme.typography.titleMedium.fontSize,
+                text = "Show Another Quote"
+            )
         }
     }
 }
-
-/*
-    set up the quote
-    display the quote
-    add a button to change the quotes
-    update the displayed quote
-*/
 
 val quotes = listOf(
     "Believe you can and you're halfway there.",
