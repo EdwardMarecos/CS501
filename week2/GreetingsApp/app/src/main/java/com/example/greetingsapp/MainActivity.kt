@@ -42,9 +42,9 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier
                             .fillMaxSize()
                             .padding(innerPadding)
-                            .background(Color(0xFFd5f5e3)) // Background color
+                            .background(Color(0xFFd5f5e3))
                     ) {
-                        GreetingInput() // Use GreetingInput instead of Quote
+                        GreetingInput()
                     }
                 }
             }
@@ -127,9 +127,9 @@ fun GreetingPreview() {
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(innerPadding)
-                    .background(Color(0xFFd5f5e3)) // Background color
+                    .background(Color(0xFFd5f5e3)) 
             ) {
-                GreetingInput() // Use GreetingInput instead of Quote
+                GreetingInput()
             }
         }
     }

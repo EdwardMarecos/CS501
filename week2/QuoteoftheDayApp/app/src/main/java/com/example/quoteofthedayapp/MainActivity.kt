@@ -82,7 +82,7 @@ fun Quote(modifier: Modifier = Modifier) {
             color = Color(0xff1cab5a)
         )
 
-        // add button to change the quoter
+        // add button to change the quote
         Button(
             modifier = Modifier
                 .clip(RoundedCornerShape(12.dp)),
